@@ -1,0 +1,5 @@
+* text=auto eol=lf
+
+*.jpg binary
+*.pdf binary
+*.ino text eol=lf
