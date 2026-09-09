@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Environment / secrets
+.env
+firmware/esp32_telemetry/secrets.h
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Editors & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
