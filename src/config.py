@@ -28,7 +28,7 @@ MQTT_PORT = _env_int("MQTT_PORT", 1883)
 MQTT_KEEPALIVE = _env_int("MQTT_KEEPALIVE", 60)
 
 # Everything hangs off one prefix so a second deployment only needs one change.
-TOPIC_PREFIX = os.getenv("MQTT_TOPIC_PREFIX", "NihatBerkay/iot_project")
+TOPIC_PREFIX = os.getenv("MQTT_TOPIC_PREFIX", "yberkayinci/aiot-monitor")
 TOPIC_TELEMETRY = f"{TOPIC_PREFIX}/telemetry"
 TOPIC_COMMANDS = f"{TOPIC_PREFIX}/commands"
 

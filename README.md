@@ -85,9 +85,7 @@ only allow-listed commands are executed.
 ├── firmware/
 │   └── esp32_telemetry/     Arduino sketch for the hardware node
 ├── docs/
-│   ├── images/              Dashboard and runtime screenshots
-│   ├── technical-report.pdf System design report
-│   └── presentation.pdf     Project presentation
+│   └── images/              Dashboard and runtime screenshots
 ├── .env.example
 └── requirements.txt
 ```
@@ -154,7 +152,7 @@ Every value is read from the environment with a fallback in [`src/config.py`](sr
 | Variable | Default | Purpose |
 |----------|---------|---------|
 | `MQTT_BROKER` / `MQTT_PORT` | `test.mosquitto.org` / `1883` | Broker endpoint |
-| `MQTT_TOPIC_PREFIX` | `NihatBerkay/iot_project` | Prefix for the `/telemetry` and `/commands` topics |
+| `MQTT_TOPIC_PREFIX` | `yberkayinci/aiot-monitor` | Prefix for the `/telemetry` and `/commands` topics |
 | `OLLAMA_MODEL` | `phi4-mini:3.8b` | Local model used for diagnosis |
 | `OLLAMA_HOST` | unset | Point at a remote Ollama instance |
 | `PING_TARGET` / `DNS_TARGET` | `8.8.8.8` / `www.google.com` | Sensing targets |
@@ -239,17 +237,11 @@ Operator-approved recovery, and the actuator executing it on the host:
 - Multi-node monitoring with an aggregate dashboard
 - SNMP actuation for real router and bandwidth control
 
-## Documentation
+## Author
 
-- [Technical report](docs/technical-report.pdf) — system design, layer-by-layer implementation, evaluation
-- [Presentation](docs/presentation.pdf) — project overview slides
-
-## Authors
+**Yunus Berkay İnci** — [@yberkayinci](https://github.com/yberkayinci)
 
 Built as the final project for **SENG423 — Internet of Things**.
-
-- **Yunus Berkay İnci** — [@yberkayinci](https://github.com/yberkayinci)
-- **Nihat Eren Özturan**
 
 ## License
 
